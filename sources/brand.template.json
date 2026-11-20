@@ -912,15 +912,6 @@
           "k": "Site",
           "v": "kizuna.games",
           "href": "https://kizuna.games"
-        },
-        {
-          "k": "Communauté",
-          "v": "Discord Kizuna",
-          "note": "(lien à compléter)"
-        },
-        {
-          "k": "Fichiers",
-          "v": "logos/ · charte/tokens.css"
         }
       ],
       "note": "Charte graphique Kizuna · v1.0 · Novembre 2026<br>Logos reconstruits en vectoriel : à comparer avec les masters du kit Visuels."
