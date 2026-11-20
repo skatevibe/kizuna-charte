@@ -1,0 +1,929 @@
+{
+  "meta": {
+    "name": "Kizuna",
+    "version": "1.0",
+    "date": "Novembre 2026",
+    "lang": "fr",
+    "usage": "visuels réseaux, Discord &amp; stream",
+    "cover_eyebrow": "Charte graphique · 絆",
+    "cover_title": "Charte<br>graphique <em>Kizuna</em>",
+    "cover_note": "Kizuna — Trading Card Game · kizuna.games<br>絆を集めろ — Deviens le plus grand otaku."
+  },
+  "fonts": {
+    "import_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Shippori+Mincho+B1:wght@700;800&display=swap",
+    "display": {
+      "family": "Unbounded",
+      "fallback": "system-ui, sans-serif",
+      "weights": [
+        500,
+        600,
+        700,
+        800,
+        900
+      ]
+    },
+    "text": {
+      "family": "Zen Kaku Gothic New",
+      "fallback": "system-ui, sans-serif",
+      "weights": [
+        400,
+        500,
+        700,
+        900
+      ]
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "fallback": "ui-monospace, monospace",
+      "weights": [
+        400,
+        500,
+        700
+      ]
+    },
+    "kanji": {
+      "family": "Shippori Mincho B1",
+      "fallback": "'Hiragino Mincho ProN', 'Yu Mincho', serif",
+      "weights": [
+        700,
+        800
+      ]
+    }
+  },
+  "colors": [
+    {
+      "token": "seal",
+      "hex": "#e8203f",
+      "name": "Rouge sceau",
+      "usage": "Logo, sceau 絆, CTA, filet des titres de section, <em>accent</em> d'un mot dans un titre. Une seule zone rouge forte par visuel. En texte : ≥ 18,66px gras ou ≥ 24px (4,43:1 sur sumi)."
+    },
+    {
+      "token": "sumi",
+      "hex": "#0b0a0d",
+      "name": "Sumi · fond",
+      "usage": "Fond par défaut de tout Kizuna : site, visuels, boosters, overlays. Jamais de noir pur #000000."
+    },
+    {
+      "token": "paper",
+      "hex": "#f4efe9",
+      "name": "Papier",
+      "usage": "Titres et texte fort sur sumi, kanji des hankos, soleils. Remplace le blanc pur, sauf texte des CTA et kanji du sceau carré (#FFFFFF)."
+    },
+    {
+      "token": "sumi-2",
+      "hex": "#131116",
+      "name": "Sumi 2 · surface",
+      "usage": "Panneaux, bandeaux, cartes d'info. Niveau au-dessus : #1B191F (boutons pilule, puces). Filet : #2C2A30, ou papier à 16 %."
+    },
+    {
+      "token": "ash",
+      "hex": "#bdb5c2",
+      "name": "Cendre · texte",
+      "usage": "Texte courant (paragraphes, descriptions) sur sumi et sumi 2. Les titres restent en papier."
+    },
+    {
+      "token": "mist",
+      "hex": "#9a929f",
+      "name": "Brume · secondaire",
+      "usage": "Métadonnées, prix, « Gratuit », comptes à rebours secondaires, légendes. Jamais pour un titre."
+    }
+  ],
+  "roles": {
+    "bg": "sumi",
+    "surface": "sumi-2",
+    "border": "#2c2a30",
+    "text": "ash",
+    "heading": "paper",
+    "muted": "mist",
+    "accent": "seal",
+    "inverse_bg": "paper",
+    "inverse_text": "sumi",
+    "success": "#3fbf7f",
+    "danger": "seal"
+  },
+  "tokens_extra": {
+    "surface-2": "#1B191F",
+    "line": "#2C2A30",
+    "rule": "rgba(244, 239, 233, 0.16)",
+    "font-kanji": "'Shippori Mincho B1', 'Hiragino Mincho ProN', 'Yu Mincho', serif",
+    "rarity-c": "#8B9099",
+    "rarity-u": "#3FBF7F",
+    "rarity-r": "#3F8CFF",
+    "rarity-e": "#A855F7",
+    "rarity-l": "#F5B81B",
+    "rarity-m": "#E8204A",
+    "rarity-d": "#F7F2FF",
+    "rarity-d-iri": "linear-gradient(110deg, #ffd1ec, #fff1c2, #d4ffe0, #cdeeff, #e4d6ff, #ffd1ec)",
+    "el-eau": "#4FB3FF",
+    "el-flamme": "#FF6B5A",
+    "el-vent": "#5FD38A",
+    "el-lumiere": "#FFD866",
+    "el-tenebres": "#C39BFF",
+    "radius-panel": "16px",
+    "radius-hanko": "16% 21% 14% 23%",
+    "cut-corner": "polygon(0 0, 100% 0, 100% 70%, 94% 100%, 0 100%)"
+  },
+  "logo": {
+    "svg": "%%LOGO%%",
+    "mark_svg": "%%MARK%%"
+  },
+  "css": "%%CSS%%",
+  "sections": [
+    {
+      "type": "identity",
+      "title": "Identité & ton",
+      "short": "Identité",
+      "eyebrow": "Identité &amp; ton",
+      "heading": "Collectionner<br>les <em>liens</em>",
+      "lead": "Kizuna (絆) veut dire « lien » en japonais. Tout l’univers visuel vient de l’encre : fond sumi, papier, sceau rouge.",
+      "cards": [
+        {
+          "label": "Nom",
+          "title": "Kizuna · 絆 · キズナ",
+          "text": "Trois écritures : latin (KIZUNA), katakana (キズナ), kanji (絆)."
+        },
+        {
+          "label": "Ce qu'on fait",
+          "text": "TCG en ligne : 7 038 personnages d’anime, un booster gratuit toutes les 10 min, échanges, duels, classements. Communauté sur Discord."
+        },
+        {
+          "label": "Signature",
+          "title": "Deviens le plus grand otaku",
+          "text": "絆を集めろ (« Collectionne les liens ») en accroche verticale. <em>À confirmer.</em>"
+        }
+      ],
+      "voice": {
+        "summary": "Ton — direct, complice, otaku assumé. On tutoie, on parle de joueur à joueur.",
+        "do": [
+          "« Deviens le plus grand otaku. »",
+          "« Tu viens de Kyara ? Importe ta collection. »",
+          "Phrases courtes, impératif, chiffre concret (×50, 10 min). Macrons écrits : Shōnen, Shōjo."
+        ],
+        "dont": [
+          "« Découvrez notre expérience innovante. » : ni vouvoiement, ni marketing creux.",
+          "« DERNIÈRE CHANCE !!! » : la majuscule sert aux titres, pas à crier.",
+          "Un kanji « qui fait japonais » ou du japonais traduit sans relecture. <em>Exemples à valider.</em>"
+        ]
+      }
+    },
+    {
+      "type": "logo",
+      "title": "Logo",
+      "concept": {
+        "eyebrow": "Logo — bannière &amp; wordmark",
+        "heading": "Un nom, <em>trois</em> écritures",
+        "lead": "Katakana キズナ empilés dans une bande rouge (bannière nobori), wordmark KIZUNA et signature TRADING CARD GAME. Seul le texte latin change de couleur selon le fond."
+      },
+      "construction": [
+        "Logo de <b>104</b> de haut · bande <b>38 × 104</b> #E8203F.",
+        "Katakana : <b>Zen Kaku Gothic New 900</b>, papier, centrés.",
+        "KIZUNA : <b>Unbounded 900</b>, capitales <b>36</b> · bande → texte <b>15</b>.",
+        "Signature : <b>Unbounded 500</b>, capitales <b>8,5</b>, interlettrage <b>0,22em</b>.",
+        "Mini <b>24px</b> de haut ; en dessous, wordmark seul ou sceau 絆."
+      ],
+      "variants": [
+        {
+          "bg": "sumi",
+          "label": "Principal · sumi #0B0A0D"
+        },
+        {
+          "bg": "sumi-2",
+          "label": "Sur surface #131116"
+        },
+        {
+          "bg": "paper",
+          "label": "Sur papier #F4EFE9"
+        }
+      ],
+      "mark_note": "Sceau 絆 seul (fond rouge, kanji blanc, coins arrondis 72/512, comme le favicon du site) : favicon, avatar Discord, icône d’app. Partout ailleurs, si le logo complet tient à 24px de haut, il passe avant le sceau.",
+      "clearspace": "Zone de protection : la largeur de la bande rouge (38 unités) sur les 4 côtés. Aucun texte, aucun bord de visuel dans cette zone.",
+      "clearspace_px": 9,
+      "misuse": [
+        {
+          "bg": "seal"
+        },
+        {
+          "transform": "scaleX(1.5)"
+        },
+        {
+          "transform": "rotate(-7deg)"
+        },
+        {
+          "bg": "#3f8cff"
+        }
+      ],
+      "rules_dont": [
+        "Jamais sur fond rouge (la bande disparaît) ni sur une couleur de rareté.",
+        "Jamais étiré, pivoté ou recomposé. Seul le hanko s’incline (-7°), jamais le logo ni le sceau carré.",
+        "Jamais la bande sans les katakana, ni les katakana hors de la bande."
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Sceau & kanji",
+      "pages": [
+        {
+          "eyebrow": "Sceau, tampon &amp; texte vertical",
+          "heading": "Le sceau <em>signe</em>, il ne décore pas",
+          "lead": "Le hanko est la signature de Kizuna dans l’interface : un carré rouge aux coins irréguliers, incliné de -7°, qui porte un seul kanji. Le sceau carré du favicon, lui, a des coins réguliers et reste droit.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "label": "Hanko plein",
+                  "center": true,
+                  "min_height": 150,
+                  "demo": "<span class=\"kz-hanko lg\">絆</span>",
+                  "spec": "<b>bg</b> #E8203F · <b>kanji</b> papier, Mincho 800<br><b>radius</b> 16% 21% 14% 23% · <b>rotate</b> -7°<br><b>taille</b> 38px (UI) · 32px (mobile)"
+                },
+                {
+                  "label": "Hanko contour",
+                  "center": true,
+                  "min_height": 150,
+                  "demo": "<span class=\"kz-hanko lg outline\">競</span>",
+                  "spec": "<b>border</b> 1,33px #E8203F · <b>kanji</b> rouge<br>États « fait » / étape franchie<br>(paliers du Rush, missions)"
+                },
+                {
+                  "label": "Texte vertical (tate)",
+                  "center": true,
+                  "min_height": 150,
+                  "demo": "<span class=\"kz-tate\">絆を集めろ</span>",
+                  "spec": "Zen Kaku Gothic New 900 · 16px<br><b>tracking</b> 0,3em · papier à 35 %<br>Toujours en marge, jamais lu en premier"
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "items": [
+                "Un sceau par zone de lecture. Deux hankos côte à côte s'annulent.",
+                "Le kanji du hanko est en Mincho (empattements), celui des icônes en Zen Kaku Gothic New 900. Choix des kanji d’icône : à valider.",
+                "Le texte vertical ne porte qu'une accroche courte (5 signes au plus), jamais une information."
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Lexique des kanji",
+          "heading": "Un kanji = <em>une</em> rubrique",
+          "lead": "Les kanji remplacent les pictos, un par rubrique. <em>Lexique relevé sur le site, à vérifier et valider</em> : le sens de chaque kanji et son choix pour la rubrique doivent être confirmés avant de le figer.",
+          "blocks": [
+            {
+              "type": "html",
+              "html": "<div class=\"kz-lex\"><div><b>絆</b><span>Kizuna · affiliation · parrain</span></div><div><b>報</b><span>Actualités</span></div><div><b>蒐</b><span>Collection · top collectionneurs</span></div><div><b>競</b><span>Rush · compétition</span></div><div><b>贈</b><span>Cadeau · boosters offerts</span></div><div><b>移</b><span>Import (depuis Kyara)</span></div><div><b>実</b><span>Succès</span></div><div><b>務</b><span>Missions</span></div><div><b>休</b><span>Pause</span></div><div><b>伝説</b><span>Rang « Légende » (prestige 3)</span></div><div><b>達人</b><span>Rang « Maître » (prestige 2)</span></div><div class=\"kz-lex-new\"><b>＋</b><span>Nouvelle rubrique : vérifier le sens du kanji, puis l’ajouter ici.</span></div></div>"
+            },
+            {
+              "type": "spec",
+              "text": "<b>icône de rubrique</b> Mincho 800 · 17px · rouge #E8203F ou papier · placée avant le titre, gap 10px · <b>statut</b> à valider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Couleurs de marque",
+      "short": "Couleurs",
+      "eyebrow": "Palette de marque",
+      "heading": "Sumi, papier, <em>sceau</em>",
+      "accent_rule": {
+        "eyebrow": "Règle du rouge",
+        "heading": "Le rouge est un <em>sceau</em>, pas un fond",
+        "lead": "Le rouge #E8203F marque ce qui engage : le logo, le sceau 絆, l’action principale. Sur un visuel, il n’y a qu’une seule zone rouge forte. Le reste est en sumi et papier, et les couleurs de jeu (raretés, éléments) restent sur leurs objets.",
+        "correct": [
+          "<span class=\"kz-cta\">Ouvrir un booster</span>",
+          "<p class=\"kz-h\">Les boosters <em>du moment</em></p>",
+          "<div style=\"display:flex;gap:14px;align-items:center\"><span class=\"kz-hanko\">絆</span><span class=\"body\" style=\"color:var(--paper)\">Top affiliation</span></div>"
+        ],
+        "incorrect": [
+          "<p class=\"body\" style=\"color:#fff;background:var(--seal);margin:-22px;padding:22px;\">Fond de section entièrement rouge.</p>",
+          "<div style=\"display:flex;gap:10px\"><span class=\"kz-cta sm\">Jouer</span><span class=\"kz-cta sm\">Échanger</span></div>",
+          "<p class=\"caption\" style=\"color:var(--seal)\">Paragraphe entier en rouge, en petit corps : illisible et sans hiérarchie.</p>"
+        ]
+      }
+    },
+    {
+      "type": "generic",
+      "title": "Couleurs de jeu",
+      "pages": [
+        {
+          "eyebrow": "Raretés",
+          "heading": "Sept raretés, <em>une</em> échelle",
+          "lead": "La rareté se lit à la couleur avant le texte. Couleurs réservées aux cartes et à ce qui en parle : tirages, badges, rôles Discord.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 4,
+              "items": [
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#8b9099;--g:linear-gradient(90deg,#6b7484,#b4bccb)\"><i></i><b>C</b></div>",
+                  "title": "Commune",
+                  "title_size": 15,
+                  "spec": "#8B9099 · cadre #6B7484 → #B4BCCB"
+                },
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#3fbf7f;--g:linear-gradient(90deg,#0a7552,#4ff0b0)\"><i></i><b>U</b></div>",
+                  "title": "Peu commune",
+                  "title_size": 15,
+                  "spec": "#3FBF7F · cadre #0A7552 → #4FF0B0<br><em>Nom à confirmer</em>"
+                },
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#3f8cff;--g:linear-gradient(90deg,#1f5fe0,#6fb0ff)\"><i></i><b>R</b></div>",
+                  "title": "Rare",
+                  "title_size": 15,
+                  "spec": "#3F8CFF · cadre #1F5FE0 → #6FB0FF"
+                },
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#a855f7;--g:linear-gradient(90deg,#9b5be0,#cfa6ff)\"><i></i><b>E</b></div>",
+                  "title": "Épique",
+                  "title_size": 15,
+                  "spec": "#A855F7 · cadre #9B5BE0 → #CFA6FF"
+                },
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#f5b81b;--g:linear-gradient(90deg,#e2a92c,#ffcf5a)\"><i></i><b>L</b></div>",
+                  "title": "Légendaire",
+                  "title_size": 15,
+                  "spec": "#F5B81B · cadre #E2A92C → #FFCF5A"
+                },
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#e8204a;--g:linear-gradient(90deg,#7a0019,#ff2d55)\"><i></i><b>M</b></div>",
+                  "title": "Mythique",
+                  "title_size": 15,
+                  "spec": "#E8204A · cadre #7A0019 → #FF2D55"
+                },
+                {
+                  "demo": "<div class=\"kz-rarity\" style=\"--r:#f7f2ff;--g:linear-gradient(110deg,#ffd1ec,#fff1c2,#d4ffe0,#cdeeff,#e4d6ff,#ffd1ec)\"><i></i><b>D</b></div>",
+                  "title": "Divine",
+                  "title_size": 15,
+                  "spec": "#F7F2FF · cadre iridescent<br>#FFD1EC → #FFF1C2 → #D4FFE0 → #CDEEFF"
+                },
+                {
+                  "surface": true,
+                  "title": "Mythique ≠ sceau",
+                  "title_size": 15,
+                  "text": "#E8204A (rareté) et #E8203F (marque) : presque identiques, deux tokens distincts. <em>Fusion à décider.</em>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Éléments",
+          "heading": "Cinq éléments, <em>toujours</em> avec leur kanji",
+          "lead": "L'élément d'une carte s'affiche dans une pastille sombre, avec son kanji en couleur. Le kanji porte l'information et la couleur la confirme : la lecture fonctionne aussi pour les daltoniens.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 5,
+              "items": [
+                {
+                  "center": true,
+                  "demo": "<span class=\"kz-el\" style=\"--el:#4fb3ff\">水</span>",
+                  "title": "Eau",
+                  "title_size": 15,
+                  "spec": "#4FB3FF"
+                },
+                {
+                  "center": true,
+                  "demo": "<span class=\"kz-el\" style=\"--el:#ff6b5a\">炎</span>",
+                  "title": "Flamme",
+                  "title_size": 15,
+                  "spec": "#FF6B5A"
+                },
+                {
+                  "center": true,
+                  "demo": "<span class=\"kz-el\" style=\"--el:#5fd38a\">風</span>",
+                  "title": "Vent",
+                  "title_size": 15,
+                  "spec": "#5FD38A"
+                },
+                {
+                  "center": true,
+                  "demo": "<span class=\"kz-el\" style=\"--el:#ffd866\">光</span>",
+                  "title": "Lumière",
+                  "title_size": 15,
+                  "spec": "#FFD866"
+                },
+                {
+                  "center": true,
+                  "demo": "<span class=\"kz-el\" style=\"--el:#c39bff\">闇</span>",
+                  "title": "Ténèbres",
+                  "title_size": 15,
+                  "spec": "#C39BFF"
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "items": [
+                "Pastille : fond noir à 55 %, rayon 3,2px, kanji Zen Kaku Gothic New 900.",
+                "La couleur d'élément ne sert qu'à la pastille et aux effets de la carte, jamais à un titre ou à un fond de visuel.",
+                "Raretés et éléments ne se mélangent pas : une carte Légendaire Eau garde son cadre or et sa pastille bleue."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "typography",
+      "title": "Typographie",
+      "families": [
+        {
+          "font": "display",
+          "eyebrow": "Display — Unbounded",
+          "heading": "Unbounded <em>pour les titres</em>",
+          "styles": [
+            {
+              "name": "Affiche",
+              "size": "41px",
+              "weight": 900,
+              "tracking": "-0.01em",
+              "leading": 1.05,
+              "uppercase": true,
+              "sample": "Deviens le plus grand otaku",
+              "sample_size": "38px",
+              "spec": "Unbounded · 41px (clamp) · 900 · -0.01em · MAJ"
+            },
+            {
+              "name": "Titre de section",
+              "size": "21.6px",
+              "weight": 800,
+              "leading": 1.2,
+              "sample": "Les boosters du moment"
+            },
+            {
+              "name": "Titre d'article",
+              "size": "18.4px",
+              "weight": 700,
+              "leading": 1.375,
+              "sample": "Mode social &amp; guildes : partage et refonte"
+            },
+            {
+              "name": "CTA",
+              "size": "16px",
+              "weight": 900,
+              "tracking": "0.04em",
+              "leading": 1,
+              "uppercase": true,
+              "sample": "Ouvrir un booster"
+            },
+            {
+              "name": "Chiffre clé",
+              "size": "30.4px",
+              "weight": 900,
+              "leading": 1,
+              "sample": "×50 · 7 038"
+            }
+          ]
+        },
+        {
+          "font": "text",
+          "eyebrow": "Texte — Zen Kaku Gothic New",
+          "heading": "Zen Kaku <em>pour lire</em>",
+          "styles": [
+            {
+              "name": "Courant",
+              "size": "16px",
+              "weight": 400,
+              "leading": 1.5,
+              "sample": "7 038 personnages à collectionner. Un booster gratuit toutes les 10 minutes.",
+              "color": "ash"
+            },
+            {
+              "name": "Pseudo / emphase",
+              "size": "16px",
+              "weight": 700,
+              "leading": 1.4,
+              "sample": "Pijaro · Prestige 3 · 1 471 cartes"
+            },
+            {
+              "name": "Petit",
+              "size": "13.3px",
+              "weight": 400,
+              "leading": 1.45,
+              "sample": "Plus que 11 jours, jusqu'au 30 novembre.",
+              "color": "mist"
+            },
+            {
+              "name": "Libellé de rareté",
+              "size": "12px",
+              "weight": 700,
+              "leading": 1.3,
+              "sample": "Légendaire · il y a 7 min",
+              "color": "#f5b81b"
+            },
+            {
+              "name": "Kanji d'interface",
+              "size": "16px",
+              "weight": 900,
+              "tracking": "0.3em",
+              "leading": 1,
+              "sample": "絆を集めろ　水 炎 風 光 闇"
+            }
+          ]
+        },
+        {
+          "font": "mono",
+          "eyebrow": "Chiffres — JetBrains Mono",
+          "heading": "Mono pour <em>ce qui bouge</em>",
+          "styles": [
+            {
+              "name": "Compte à rebours",
+              "size": "13px",
+              "weight": 700,
+              "tracking": "0.02em",
+              "leading": 1,
+              "sample": "12:53:16 · 15/15"
+            },
+            {
+              "name": "Prix / métadonnée",
+              "size": "12.5px",
+              "weight": 400,
+              "leading": 1.3,
+              "sample": "Gratuit · 150 ◆ · N° 23",
+              "color": "mist"
+            }
+          ]
+        },
+        {
+          "font": "kanji",
+          "eyebrow": "Kanji — Mincho",
+          "heading": "Mincho <em>pour les sceaux</em>",
+          "styles": [
+            {
+              "name": "Hanko",
+              "size": "21px",
+              "weight": 800,
+              "leading": 1,
+              "sample": "絆 競",
+              "spec": "Mincho · 21px · 800 (Hiragino Mincho ProN / Yu Mincho, à défaut Shippori Mincho B1)"
+            },
+            {
+              "name": "Icône de rubrique",
+              "size": "17px",
+              "weight": 800,
+              "leading": 1,
+              "sample": "報 蒐 実 務",
+              "spec": "Mincho · 17px · 800 · choix des kanji à valider"
+            }
+          ]
+        }
+      ],
+      "rules": [
+        "Titres d'affiche en MAJUSCULES Unbounded 900, interlettrage -0,01 à -0,02em. Titres de section en casse normale, 800.",
+        "Interlettrage positif seulement sur les CTA (+0,04em) et la signature du logo.",
+        "Jamais de texte courant en Unbounded : trop large au-delà d'une ligne. Le paragraphe passe en Zen Kaku.",
+        "Le site utilise la Mincho du système. Pour les exports (réseaux, stream), Shippori Mincho B1 garantit le même rendu partout. <em>À confirmer.</em>"
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Motifs & interface",
+      "short": "Motifs",
+      "pages": [
+        {
+          "eyebrow": "Motifs graphiques",
+          "heading": "Le manga <em>en arrière-plan</em>",
+          "lead": "Deux motifs empruntés au manga donnent l’énergie des visuels : les soleils (lignes de concentration) et la trame. Ils restent derrière le sujet, jamais devant.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 2,
+              "items": [
+                {
+                  "label": "Soleil",
+                  "bg": "sumi",
+                  "min_height": 0,
+                  "demo": "<div class=\"kz-sun-demo\"><span class=\"kz-hanko lg\">絆</span></div>",
+                  "caption": "Rayons fins et irréguliers, centre dégagé, centré sur le sujet (carte, sceau, personnage).",
+                  "spec": "papier #F4EFE9 à 12–30 % · ou couleur de conduite du visuel"
+                },
+                {
+                  "label": "Trame",
+                  "bg": "sumi",
+                  "demo": "<div class=\"kz-tone-demo\"></div>",
+                  "caption": "Points en grille, derrière les gros titres et en bas des visuels.",
+                  "spec": "point 0,7px · pas 4px · couleur de conduite à 60 %"
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "items": [
+                "Un soleil par visuel, jamais en plein contraste derrière un texte : 30 % au plus sous un titre.",
+                "Les fichiers sources sont dans <b>logos/</b> : kizuna-soleil-papier.svg et kizuna-soleil-rouge.svg."
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Éléments d'interface",
+          "heading": "Un seul <em>coin coupé</em> par écran",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "label": "CTA principal",
+                  "demo": "<span class=\"kz-cta\">Connexion Discord</span>",
+                  "caption": "Survol : luminosité 110 %, clic : 90 %.",
+                  "spec": "<b>bg</b> #E8203F · <b>color</b> #FFF · Unbounded 900 16px<br><b>min-h</b> 54px · <b>pad</b> 0 24px · coin coupé 94 % / 70 %"
+                },
+                {
+                  "label": "Bouton pilule",
+                  "demo": "<span class=\"kz-pill\">Voir la carte</span> <span class=\"kz-pill fill\">15/15</span>",
+                  "caption": "Actions secondaires, compteurs. Jamais rouges.",
+                  "spec": "<b>h</b> 36px · <b>radius</b> 999px · <b>border</b> papier 16 %"
+                },
+                {
+                  "label": "Titre de section",
+                  "demo": "<p class=\"kz-h\">Top collectionneurs</p>",
+                  "caption": "Filet rouge à gauche, ou kanji de rubrique.",
+                  "spec": "<b>border-left</b> 3px #E8203F · Unbounded 800 21,6px"
+                }
+              ]
+            },
+            {
+              "type": "cells",
+              "columns": 2,
+              "items": [
+                {
+                  "label": "Panneau",
+                  "demo": "<div class=\"kz-panel\"><span class=\"kz-k\">贈</span><div><b class=\"kz-big\">×50</b> <span class=\"body\">boosters offerts en te connectant avec Discord</span></div></div>",
+                  "spec": "<b>bg</b> #131116 · <b>border</b> 1px papier 16 % · <b>radius</b> 16px · <b>pad</b> 12px 16px"
+                },
+                {
+                  "label": "Bandeau d'événement",
+                  "demo": "<div class=\"kz-panel kz-rush\"><span class=\"kz-hanko\">競</span><div><b class=\"kz-rt\">Rush de novembre 2026</b><br><span class=\"kz-small\">Plus que 11 jours : un podium à gagner.</span></div></div>",
+                  "spec": "Panneau + halo rouge à gauche : radial-gradient #E8203F 22 %"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Visuels réseaux",
+      "short": "Réseaux",
+      "pages": [
+        {
+          "eyebrow": "Formats &amp; zones de sécurité",
+          "heading": "Le sujet <em>au centre</em>, l'interface autour",
+          "lead": "Trois formats suffisent. Les zones hachurées sont recouvertes par l'interface des applis : on n'y met ni texte ni logo. <em>Valeurs standard des plateformes, à recaler sur le kit Visuels.</em>",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "label": "Carré · 1080 × 1080",
+                  "center": true,
+                  "demo": "<div class=\"kz-fmt\" style=\"width:150px;height:150px\"><i class=\"m\" style=\"inset:9px\"></i></div>",
+                  "spec": "Feed X, Discord, Bluesky<br><b>marge</b> 64px sur les 4 côtés"
+                },
+                {
+                  "label": "Portrait · 1080 × 1350",
+                  "center": true,
+                  "demo": "<div class=\"kz-fmt\" style=\"width:120px;height:150px\"><i class=\"m\" style=\"inset:7px\"></i></div>",
+                  "spec": "Feed Instagram (format par défaut)<br><b>marge</b> 64px · grille d'aperçu 3:4 au centre"
+                },
+                {
+                  "label": "Vertical · 1080 × 1920",
+                  "center": true,
+                  "demo": "<div class=\"kz-fmt\" style=\"width:84px;height:150px\"><i class=\"z\" style=\"top:0;height:20px\"></i><i class=\"z\" style=\"bottom:0;height:27px\"></i><i class=\"z\" style=\"right:0;top:20px;bottom:27px;width:11px\"></i></div>",
+                  "spec": "Story, Reel, TikTok, Shorts<br><b>haut</b> 250px · <b>bas</b> 340px · <b>droite</b> 120px (TikTok)"
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "items": [
+                "Le sceau 絆 ou le logo se place en haut à gauche, dans la marge. Une seule signature par visuel.",
+                "Un titre en Unbounded 900 MAJ, 2 lignes au plus. Le détail va dans la légende du post, pas dans l'image."
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Gabarits par type de visuel",
+          "heading": "Six visuels, <em>une</em> grammaire",
+          "lead": "Chaque type de visuel du kit a sa couleur de conduite. Le reste (fond sumi, soleil, logo, titre) ne change pas.",
+          "blocks": [
+            {
+              "type": "html",
+              "html": "<div class=\"kz-social\"><div class=\"kz-post\"><div class=\"sun\"></div><span class=\"kz-hanko\">絆</span><div class=\"card\" style=\"--g:linear-gradient(135deg,#e2a92c,#ffcf5a)\"><b>L</b></div><p class=\"t\">Nouvelle<br>Légendaire</p><span class=\"tag\">kizuna.games</span></div><table class=\"kz-tbl\"><tr><th>Visuel</th><th>Couleur de conduite</th><th>Élément central</th></tr><tr><td>Nouvelles cartes</td><td>Rareté de la carte</td><td>Cartes en éventail sur soleil</td></tr><tr><td>Booster</td><td>Couleur du booster (gabarit en refonte)</td><td>Booster incliné sur soleil</td></tr><tr><td>Carte à la une</td><td>Rareté de la carte</td><td>Une carte, grande, centrée</td></tr><tr><td>Devinette</td><td>Papier + rouge sceau</td><td>Silhouette, « ? » en Unbounded 900</td></tr><tr><td>Duel</td><td>Les raretés des deux cartes</td><td>Deux cartes face à face, « VS »</td></tr><tr><td>Annonce</td><td>Rouge sceau</td><td>Titre + hanko, soleil rouge</td></tr></table></div><p class=\"caption\" style=\"margin-top:14px\"><em>À confirmer :</em> couleurs de conduite déduites des règles du site, à comparer avec les gabarits du kit Visuels.</p>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Discord & stream",
+      "short": "Discord &amp; stream",
+      "pages": [
+        {
+          "eyebrow": "Discord",
+          "heading": "Les rôles <em>suivent</em> les raretés",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "label": "Icône du serveur · 512 × 512",
+                  "center": true,
+                  "demo": "<div class=\"kz-round\">%%MARK%%</div>",
+                  "spec": "Sceau carré du favicon. Discord arrondit encore l’affichage : rien d’important dans les coins."
+                },
+                {
+                  "label": "Bannière · 960 × 540",
+                  "center": true,
+                  "demo": "<div class=\"kz-banner\"><div class=\"sun\"></div><span class=\"lg\">%%LOGO_PAPER%%</span></div>",
+                  "spec": "Logo centré sur sumi + soleil papier 15 %"
+                },
+                {
+                  "label": "Rôles de collectionneur",
+                  "demo": "<div class=\"kz-roles\"><span style=\"--r:#f7f2ff\">Divin</span><span style=\"--r:#e8204a\">Mythique</span><span style=\"--r:#f5b81b\">Légendaire</span><span style=\"--r:#a855f7\">Épique</span><span style=\"--r:#3f8cff\">Rare</span></div>",
+                  "spec": "Couleur du rôle = couleur de rareté. Rouge sceau : équipe Kizuna."
+                }
+              ]
+            },
+            {
+              "type": "cells",
+              "columns": 2,
+              "items": [
+                {
+                  "label": "Emojis · 128 × 128",
+                  "demo": "<div style=\"display:flex;gap:14px;align-items:center\"><span class=\"kz-hanko\">絆</span><span class=\"kz-hanko\">競</span><span class=\"kz-el\" style=\"--el:#ffd866\">光</span><span class=\"kz-rarity sm\" style=\"--r:#e8204a;--g:linear-gradient(90deg,#7a0019,#ff2d55)\"><i></i><b>M</b></span></div>",
+                  "spec": "Hankos, pastilles d’élément, lettres de rareté. Marge 8px."
+                },
+                {
+                  "label": "Annonces du bot",
+                  "demo": "<div class=\"kz-embed\"><b>Tirage Mythique</b><br><span>cormorax a tiré Anya Forger · N° 23</span></div>",
+                  "spec": "Barre de l’embed = couleur de rareté du tirage"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Stream",
+          "heading": "Un overlay <em>qui s'efface</em> devant le tirage",
+          "lead": "Pour les lives (ouvertures de boosters, Rush), l'habillage reste sur les bords. Le centre appartient à la carte qui sort.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "label": "Alerte de tirage",
+                  "demo": "<div class=\"kz-alert\" style=\"--r:#f5b81b\"><span class=\"kz-hanko\">絆</span><div><b>LÉGENDAIRE</b><br><span>Gai Might · ✦ Parfaite</span></div></div>",
+                  "spec": "Panneau sumi 2 + filet haut de rareté 2px<br>Entrée 250ms, maintien 5s, sortie 200ms"
+                },
+                {
+                  "label": "Bandeau bas",
+                  "demo": "<div class=\"kz-lower\"><span class=\"k\">競</span><b>Rush de novembre</b><span class=\"mono\">J-11</span></div>",
+                  "spec": "Hauteur 64px (1080p) · Unbounded 800 + JetBrains Mono pour le compteur"
+                },
+                {
+                  "label": "Écran d'attente · 1920 × 1080",
+                  "center": true,
+                  "demo": "<div class=\"kz-banner wide\"><div class=\"sun\"></div><span class=\"kz-tate abs\">絆を集めろ</span><span class=\"lg\">%%LOGO_PAPER%%</span></div>",
+                  "spec": "Logo centré, soleil papier qui tourne lentement (60s/tour), texte vertical à droite"
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "items": [
+                "Les plateformes de stream (Twitch, YouTube) demandent aussi : bannière de profil 1200 × 480, panneaux 320 × 100, image hors ligne 1920 × 1080.",
+                "Animations : courbe cubic-bezier(.3, 1.25, .5, 1) pour les sceaux (petit rebond), 150ms pour les survols. Toujours une version sans mouvement."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accessibility",
+      "title": "Accessibilité",
+      "heading": "Des contrastes <em>mesurés</em>",
+      "lead": "Ratios WCAG 2.1 des paires réellement utilisées. AA = 4,5:1 pour le texte courant, 3:1 pour le texte large (≥ 18,66px gras ou ≥ 24px).",
+      "pairs": [
+        {
+          "fg": "#ffffff",
+          "bg": "seal",
+          "usage": "Texte blanc des CTA sur rouge (Unbounded 900 16px)",
+          "min": 4.5
+        },
+        {
+          "fg": "paper",
+          "bg": "seal",
+          "usage": "Kanji papier dans le sceau (glyphe large)",
+          "min": 3
+        },
+        {
+          "fg": "#e8204a",
+          "bg": "sumi",
+          "usage": "Libellé de rareté Mythique (12px gras)",
+          "min": 4.5
+        }
+      ],
+      "notes": [
+        "<b>Écart accepté</b> : les trois paires en échec sont à moins de 0,1 point du seuil. Le rouge reste #E8203F, réservé au texte large. Si un audit l’exige : CTA en <b>#E61F3E</b> (4,54:1), texte rouge en <b>#EA2241</b> (4,52:1).",
+        "Rareté et élément ne reposent jamais sur la couleur seule : la lettre (C U R E L M D) ou le kanji (水 炎 風 光 闇) est toujours présent.",
+        "Toute animation a une version sans mouvement (prefers-reduced-motion)."
+      ]
+    },
+    {
+      "type": "dodont",
+      "title": "Do / Don't",
+      "eyebrow": "Do / Don't",
+      "heading": "Les bons <em>réflexes</em>",
+      "do": [
+        {
+          "visual": {
+            "logo": {
+              "bg": "sumi"
+            }
+          },
+          "desc": "Logo complet sur sumi : la version principale, partout où il tient à 24px de haut."
+        },
+        {
+          "visual": {
+            "html": "<span class=\"kz-cta\">Ouvrir un booster</span>",
+            "bg": "sumi"
+          },
+          "desc": "Une seule action rouge à coin coupé par écran ou par visuel."
+        },
+        {
+          "visual": {
+            "html": "<div style=\"display:flex;gap:12px;align-items:center\"><span class=\"kz-el\" style=\"--el:#4fb3ff\">水</span><span class=\"kz-rarity sm\" style=\"--r:#f5b81b;--g:linear-gradient(90deg,#e2a92c,#ffcf5a)\"><i></i><b>L</b></span></div>",
+            "bg": "sumi"
+          },
+          "desc": "Élément et rareté avec leur kanji ou leur lettre, jamais la couleur seule."
+        }
+      ],
+      "dont": [
+        {
+          "visual": {
+            "logo": {
+              "bg": "seal"
+            }
+          },
+          "desc": "Jamais sur fond rouge (la bande disparaît) ni sur une couleur de rareté."
+        },
+        {
+          "visual": {
+            "html": "<div style=\"display:flex;gap:8px\"><span class=\"kz-cta sm\">Jouer</span><span class=\"kz-cta sm\">Échanger</span></div>",
+            "bg": "sumi"
+          },
+          "desc": "Jamais deux CTA rouges côte à côte : le second passe en bouton pilule."
+        },
+        {
+          "visual": {
+            "logo": {
+              "bg": "sumi",
+              "transform": "rotate(-7deg)"
+            }
+          },
+          "desc": "Jamais le logo incliné. Seul le sceau s'incline (-7°)."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Contact & ressources",
+      "eyebrow": "Contact &amp; ressources",
+      "heading": "絆を<br><em>集めろ.</em>",
+      "rows": [
+        {
+          "k": "Contact",
+          "v": "hello@kizuna.games",
+          "href": "mailto:hello@kizuna.games"
+        },
+        {
+          "k": "Site",
+          "v": "kizuna.games",
+          "href": "https://kizuna.games"
+        },
+        {
+          "k": "Communauté",
+          "v": "Discord Kizuna",
+          "note": "(lien à compléter)"
+        },
+        {
+          "k": "Fichiers",
+          "v": "logos/ · charte/tokens.css"
+        }
+      ],
+      "note": "Charte graphique Kizuna · v1.0 · Novembre 2026<br>Logos reconstruits en vectoriel : à comparer avec les masters du kit Visuels."
+    }
+  ]
+}

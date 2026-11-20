@@ -1,0 +1,46 @@
+/* Kizuna — design tokens v1.0 (généré depuis brand.json) */
+:root {
+  /* Palette */
+  --seal: #E8203F; /* Logo, sceau 絆, CTA, filet des titres de section, accent d'un mot dans un titre. Une seule zone rouge forte par visuel. En texte : ≥ 18,66px gras ou ≥ 24px (4,43:1 sur sumi). */
+  --sumi: #0B0A0D; /* Fond par défaut de tout Kizuna : site, visuels, boosters, overlays. Jamais de noir pur #000000. */
+  --paper: #F4EFE9; /* Titres et texte fort sur sumi, kanji des hankos, soleils. Remplace le blanc pur, sauf texte des CTA et kanji du sceau carré (#FFFFFF). */
+  --sumi-2: #131116; /* Panneaux, bandeaux, cartes d'info. Niveau au-dessus : #1B191F (boutons pilule, puces). Filet : #2C2A30, ou papier à 16 %. */
+  --ash: #BDB5C2; /* Texte courant (paragraphes, descriptions) sur sumi et sumi 2. Les titres restent en papier. */
+  --mist: #9A929F; /* Métadonnées, prix, « Gratuit », comptes à rebours secondaires, légendes. Jamais pour un titre. */
+  /* Rôles */
+  --bg: var(--sumi);
+  --surface: var(--sumi-2);
+  --border: #2c2a30;
+  --text: var(--ash);
+  --heading: var(--paper);
+  --muted: var(--mist);
+  --accent: var(--seal);
+  --inverse-bg: var(--paper);
+  --inverse-text: var(--sumi);
+  --success: #3fbf7f;
+  --danger: var(--seal);
+  /* Typographie */
+  --font-display: 'Unbounded', system-ui, sans-serif;
+  --font-text: 'Zen Kaku Gothic New', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --surface-2: #1B191F;
+  --line: #2C2A30;
+  --rule: rgba(244, 239, 233, 0.16);
+  --font-kanji: 'Shippori Mincho B1', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --rarity-c: #8B9099;
+  --rarity-u: #3FBF7F;
+  --rarity-r: #3F8CFF;
+  --rarity-e: #A855F7;
+  --rarity-l: #F5B81B;
+  --rarity-m: #E8204A;
+  --rarity-d: #F7F2FF;
+  --rarity-d-iri: linear-gradient(110deg, #ffd1ec, #fff1c2, #d4ffe0, #cdeeff, #e4d6ff, #ffd1ec);
+  --el-eau: #4FB3FF;
+  --el-flamme: #FF6B5A;
+  --el-vent: #5FD38A;
+  --el-lumiere: #FFD866;
+  --el-tenebres: #C39BFF;
+  --radius-panel: 16px;
+  --radius-hanko: 16% 21% 14% 23%;
+  --cut-corner: polygon(0 0, 100% 0, 100% 70%, 94% 100%, 0 100%);
+}

@@ -1,0 +1,137 @@
+/* ===== Kizuna — CSS injecté dans la charte (habillage du document + démos) ===== */
+
+/* --- Habillage du document : titres Kizuna, couverture et contact en sumi --- */
+.h2{font-weight:900;font-size:34px;line-height:1.08;letter-spacing:-0.01em;text-transform:uppercase;}
+.h3{font-weight:800;}
+.toc-title{font-weight:700;font-size:20px;} .toc-num{font-weight:900;}
+.swatch .hex{font-weight:800;} .a11y-ratio{font-weight:800;}
+.cover-title{font-weight:900;font-size:68px;line-height:1.02;letter-spacing:-0.01em;text-transform:uppercase;}
+.page.dark{background:var(--sumi);color:var(--paper);}
+.page.dark .logo{color:var(--paper)!important;}
+.page.dark .cover-title{color:var(--paper);}
+.page.dark .cover-sub,.page.dark .eyebrow{color:var(--mist);}
+.page.dark .contact-row{border-bottom-color:var(--line);}
+.page.dark .contact-row .k,.page.dark .contact-row .note{color:var(--mist);}
+.page.dark .contact-row .v{color:var(--paper);}
+.page.dark::before{content:"";position:absolute;inset:0;background:url("%%SUN_PAPER%%") 78% 50%/1900px no-repeat;opacity:.13;pointer-events:none;}
+.page.dark>*{position:relative;}
+/* Logo : le wordmark suit le fond (papier sur sombre, sumi sur papier) */
+[style*="background:#0b0a0d"] .logo,[style*="background:#131116"] .logo{color:#f4efe9!important;}
+[style*="background:#f4efe9"] .logo{color:#0b0a0d!important;}
+.mark svg{height:72px;}
+.badge.ok{background:rgba(63,191,127,.16);} .badge.ko{background:rgba(232,32,63,.16);color:#ff6b7f;}
+.dd-flag.do{background:rgba(63,191,127,.18);} .dd-flag.dont{background:rgba(232,32,63,.2);color:#ff6b7f;}
+
+/* --- Sceau (hanko) --- */
+.kz-hanko{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--seal);color:var(--paper);border-radius:16% 21% 14% 23%;font:800 21px/1 var(--font-kanji);rotate:-7deg;flex:none;}
+.kz-hanko.lg{width:84px;height:84px;font-size:46px;}
+.kz-hanko.outline{background:transparent;border:1.33px solid var(--seal);color:var(--seal);}
+.kz-hanko.lg.outline{border-width:2.5px;}
+.kz-tate{writing-mode:vertical-rl;font:900 16px/1 var(--font-text);letter-spacing:.3em;color:rgba(244,239,233,.35);}
+
+/* --- Lexique des kanji --- */
+.kz-lex{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.kz-lex div{background:var(--sumi);padding:16px 18px;display:flex;flex-direction:column;gap:8px;}
+.kz-lex b{font:800 26px/1 var(--font-kanji);color:var(--seal);}
+.kz-lex span{font-size:12.5px;line-height:1.4;color:var(--ash);}
+
+/* --- Titres, boutons, panneaux --- */
+.kz-h{border-left:3px solid var(--seal);padding-left:10px;font:800 21.6px/1.2 var(--font-display);color:var(--paper);}
+.kz-cta{display:inline-flex;align-items:center;justify-content:center;background:var(--seal);color:#fff;min-height:54px;padding:0 24px;font:900 16px/1 var(--font-display);text-transform:uppercase;letter-spacing:.04em;clip-path:polygon(0 0,100% 0,100% 70%,94% 100%,0 100%);white-space:nowrap;}
+.kz-cta.sm{min-height:40px;padding:0 14px;font-size:12px;}
+.kz-pill{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;border:1px solid var(--rule);color:var(--paper);font:700 14px var(--font-text);margin:0 6px 6px 0;}
+.kz-pill.fill{background:var(--surface-2);border-color:transparent;font-weight:400;font-family:var(--font-mono);font-size:13px;}
+.kz-panel{display:flex;gap:14px;align-items:center;border:1px solid var(--rule);border-radius:16px;background:var(--sumi-2);padding:12px 16px;}
+.kz-panel .body{font-size:13px;}
+.kz-k{font:800 24px/1 var(--font-kanji);color:var(--seal);}
+.kz-big{font:900 26px/1 var(--font-display);color:var(--paper);}
+.kz-rush{background:radial-gradient(circle at 0% 50%,rgba(232,32,63,.22),transparent 60%),var(--sumi-2);}
+.kz-rt{font:500 14px var(--font-display);color:var(--paper);}
+.kz-small{font-size:12px;color:var(--mist);}
+
+/* --- Raretés & éléments --- */
+.kz-rarity{display:flex;align-items:center;gap:12px;}
+.kz-rarity i{display:block;width:64px;height:40px;background:var(--g);border-radius:3px;}
+.kz-rarity b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:4px;background:var(--r);color:var(--sumi);font:900 14px var(--font-display);}
+.kz-rarity.sm i{display:none;}
+.kz-el{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:4px;background:rgba(0,0,0,.55);border:1px solid var(--line);font:900 22px/1 var(--font-text);color:var(--el);}
+
+/* --- Motifs --- */
+.kz-sun-demo{height:120px;display:grid;place-items:center;background:url("%%SUN_PAPER%%") center/240px no-repeat;opacity:1;position:relative;}
+.kz-sun-demo::before{content:"";position:absolute;inset:0;background:var(--sumi);opacity:.55;}
+.kz-sun-demo .kz-hanko{position:relative;}
+.kz-tone-demo{height:120px;background:radial-gradient(circle,#f5b047 .7px,transparent .8px) 0 0/4px 4px;-webkit-mask:linear-gradient(transparent,#000);mask:linear-gradient(transparent,#000);}
+.kz-crimp-demo{height:120px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(#0b0a0d,#3a2a16);}
+.kz-crimp-demo::before,.kz-crimp-demo::after{content:"";height:10px;background:#131116 repeating-linear-gradient(90deg,rgba(255,255,255,.16) 0 .72px,transparent .72px 1.92px);}
+
+/* --- Booster --- */
+.kz-pack{position:relative;width:150px;height:262px;flex:none;overflow:hidden;border-radius:3px;background:linear-gradient(#0b0a0d 0,color-mix(in srgb,var(--pc) 32%,#0b0a0d) 100%);color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.5);}
+.kz-pack .crimp{position:absolute;left:0;right:0;height:9px;background:#131116 repeating-linear-gradient(90deg,rgba(255,255,255,.16) 0 .72px,transparent .72px 1.92px);z-index:3;}
+.kz-pack .crimp.top{top:0;} .kz-pack .crimp.bot{bottom:0;}
+.kz-pack .rays{position:absolute;inset:-35%;background:repeating-conic-gradient(from 2deg at 50% 40%,var(--pc) 0 .7deg,transparent 1.1deg 5.3deg);opacity:.5;}
+.kz-pack .tone{position:absolute;left:0;right:0;bottom:30px;height:110px;background:radial-gradient(circle,var(--pc) .7px,transparent .8px) 0 0/4px 4px;opacity:.55;-webkit-mask:linear-gradient(transparent,#000);mask:linear-gradient(transparent,#000);}
+.kz-pack .win{position:absolute;top:38px;left:16px;right:16px;height:122px;background:#0b0a0d;border:1px solid color-mix(in srgb,var(--pc) 60%,transparent);display:grid;place-items:center;overflow:hidden;}
+.kz-pack .win span{font:800 92px/1 var(--font-kanji);color:var(--pc);opacity:.22;}
+.kz-pack .head{position:absolute;top:15px;left:9px;display:flex;gap:4px;align-items:center;font:800 10px var(--font-display);letter-spacing:.04em;color:var(--paper);z-index:2;}
+.kz-pack .head b{display:grid;place-items:center;width:14px;height:14px;background:var(--seal);color:#fff;font:900 8.6px/1 var(--font-text);}
+.kz-pack .stamp{position:absolute;top:26px;right:9px;width:28px;height:28px;display:grid;place-items:center;background:#0b0a0d;border:1px solid var(--pc);color:var(--pc);font:700 16px/1 var(--font-kanji);rotate:6deg;z-index:2;}
+.kz-pack .title{position:absolute;left:8px;right:8px;bottom:42px;font:900 21px/.88 var(--font-display);letter-spacing:-.02em;text-transform:uppercase;color:var(--paper);text-shadow:0 2px 0 #0b0a0d;z-index:2;}
+.kz-pack .ribbon{position:absolute;left:0;right:0;bottom:12px;height:22px;display:flex;align-items:center;gap:4px;padding:0 7px;background:var(--pc);color:#0b0a0d;z-index:2;}
+.kz-pack .ribbon b{font:900 10px/1 var(--font-display);}
+.kz-pack .ribbon small{font:800 5.8px/1 var(--font-display);text-transform:uppercase;}
+.kz-pack .ribbon em{font:700 6px/1 var(--font-text);font-style:normal;color:rgba(11,10,13,.78);margin-left:auto;}
+.kz-pack .ribbon u{display:grid;place-items:center;width:13px;height:13px;background:#0b0a0d;color:var(--pc);font:900 7.4px/1 var(--font-kanji);text-decoration:none;}
+.kz-anat{display:flex;gap:44px;align-items:flex-start;}
+.kz-anat-packs{display:flex;gap:22px;flex:none;}
+.kz-anat-packs .kz-pack:nth-child(2){margin-top:22px;}
+.kz-steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:10px;}
+.kz-steps li{counter-increment:s;display:block;position:relative;padding-left:34px;font-size:13px;line-height:1.45;color:var(--ash);}
+.kz-steps li::before{content:counter(s);position:absolute;left:0;top:-2px;display:grid;place-items:center;width:22px;height:22px;background:var(--seal);color:#fff;font:900 11px/1 var(--font-display);border-radius:16% 21% 14% 23%;}
+.kz-steps b{color:var(--paper);}
+.kz-ex{padding-top:6px;}
+
+/* --- Réseaux --- */
+.kz-fmt{position:relative;background:var(--sumi);border:1px solid var(--mist);}
+.kz-fmt .m{position:absolute;border:1px dashed var(--seal);}
+.kz-fmt .z{position:absolute;left:0;right:0;background:repeating-linear-gradient(45deg,rgba(232,32,63,.45) 0 2px,transparent 2px 6px);}
+.kz-fmt .z[style*="width"]{left:auto;}
+.kz-social{display:flex;gap:36px;align-items:flex-start;}
+.kz-post{position:relative;flex:none;width:216px;height:270px;background:var(--sumi);border:1px solid var(--line);overflow:hidden;}
+.kz-post .sun{position:absolute;inset:0;background:url("%%SUN_PAPER%%") 50% 42%/420px no-repeat;opacity:.3;}
+.kz-post .kz-hanko{position:absolute;top:14px;left:14px;width:28px;height:28px;font-size:15px;}
+.kz-post .card{position:absolute;left:68px;top:52px;width:80px;height:112px;border-radius:5px;background:var(--g);display:flex;align-items:flex-start;justify-content:flex-end;padding:6px;rotate:4deg;box-shadow:0 8px 24px rgba(0,0,0,.6);}
+.kz-post .card b{display:grid;place-items:center;width:18px;height:18px;background:#f5b81b;color:var(--sumi);font:900 10px var(--font-display);border-radius:3px;}
+.kz-post .t{position:absolute;left:14px;bottom:30px;font:900 21px/1 var(--font-display);text-transform:uppercase;letter-spacing:-.01em;color:var(--paper);}
+.kz-post .tag{position:absolute;left:14px;bottom:13px;font:500 8px var(--font-mono);color:var(--mist);}
+.kz-tbl{border-collapse:collapse;width:100%;font-size:12.5px;}
+.kz-tbl th{text-align:left;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--mist);padding:0 10px 10px 0;border-bottom:1px solid var(--line);}
+.kz-tbl td{padding:9px 10px 9px 0;border-bottom:1px solid var(--line);color:var(--ash);}
+.kz-tbl td:first-child{color:var(--paper);font-weight:700;}
+
+/* --- Discord & stream --- */
+.kz-round{width:96px;height:96px;border-radius:24%;overflow:hidden;}
+.kz-round svg{width:100%;height:100%;display:block;}
+.kz-banner{position:relative;width:200px;height:112px;background:var(--sumi);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;}
+.kz-banner.wide{width:180px;height:101px;}
+.kz-banner .sun{position:absolute;inset:0;background:url("%%SUN_PAPER%%") center/320px no-repeat;opacity:.15;}
+.kz-banner .lg{position:relative;line-height:0;}
+.kz-banner .lg svg{height:30px;width:auto;}
+.kz-banner .abs{position:absolute;right:8px;top:10px;font-size:8px;}
+.kz-roles{display:flex;flex-direction:column;gap:6px;}
+.kz-roles span{font:700 13px var(--font-text);color:var(--r);display:flex;align-items:center;gap:8px;}
+.kz-roles span::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--r);}
+.kz-embed{border-left:4px solid #e8204a;background:var(--surface-2);padding:10px 14px;border-radius:4px;font-size:12.5px;color:var(--ash);}
+.kz-embed b{color:var(--paper);font-family:var(--font-display);font-weight:700;font-size:13px;}
+.kz-alert{display:flex;gap:12px;align-items:center;background:var(--sumi-2);border:1px solid var(--rule);border-top:2px solid var(--r);border-radius:10px;padding:10px 12px;}
+.kz-alert b{font:900 13px var(--font-display);color:var(--r);letter-spacing:.02em;}
+.kz-alert span{font-size:11.5px;color:var(--ash);}
+.kz-lower{display:flex;align-items:center;gap:10px;background:var(--sumi-2);border-top:2px solid var(--seal);padding:10px 12px;}
+.kz-lower .k{font:800 18px/1 var(--font-kanji);color:var(--seal);}
+.kz-lower b{font:800 12px var(--font-display);color:var(--paper);}
+.kz-lower .mono{margin-left:auto;font:700 12px var(--font-mono);color:var(--paper);}
+
+/* --- Ajustements de mise en page du document --- */
+.cell{padding:22px 22px;}
+.toc.compact .toc-row{padding:6px 0;} .toc.compact .toc-title{font-size:17px;}
+.cell[style*="min-height:140px"]{min-height:118px!important;}
+.kz-lex .kz-lex-new b{color:var(--mist);font-family:var(--font-display);} .kz-lex .kz-lex-new span{color:var(--mist);}
