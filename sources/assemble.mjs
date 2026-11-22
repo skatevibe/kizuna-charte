@@ -9,7 +9,7 @@ const read = p => fs.readFileSync(path.join(root, p), 'utf8');
 const brand = JSON.parse(read('sources/brand.template.json'));
 const frag = JSON.parse(read('logos/_brand-fragments.json'));
 
-const sunUri = 'data:image/svg+xml,' + encodeURIComponent(frag.sunPaper);
+const sunUri = 'data:image/svg+xml,' + encodeURIComponent(frag.lines);
 const logoPaper = frag.logo.replace(/currentColor/g, '#F4EFE9');
 
 const pack = (id, color, kanji, title, sub) =>
@@ -27,7 +27,7 @@ const walk = v => typeof v === 'string' ? expand(v) : Array.isArray(v) ? v.map(w
 const out = walk(brand);
 out.logo.svg = frag.logo;
 out.logo.mark_svg = frag.mark;
-out.css = read('sources/brand.css').replace(/%%SUN_PAPER%%/g, sunUri);
+out.css = read('sources/brand.css').replace(/%%LINES%%/g, sunUri);
 
 const left = JSON.stringify(out).match(/%%[A-Z_]+[^%]*%%/g);
 if (left) { console.error('Marqueurs non remplacés :', left); process.exit(1); }

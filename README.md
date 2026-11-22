@@ -5,7 +5,7 @@ Charte graphique de [Kizuna](https://kizuna.games), Trading Card Game.
 - **Charte en ligne** : `charte/charte.html` (servie par GitHub Pages)
 - **PDF** : `charte/charte.pdf`
 - **Tokens CSS** : `charte/tokens.css`
-- **Logos vectorisés** : `logos/` (logo complet sombre / clair / mono, wordmark, sceau carré, hanko, soleils)
+- **Logos vectorisés** : `logos/` (logo sceau + KIZUNA sombre / clair / mono, wordmark, icône avatar, favicon, lignes de concentration)
 
 ## Mettre à jour
 

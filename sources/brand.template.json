@@ -10,7 +10,7 @@
     "cover_note": "Kizuna — Trading Card Game · kizuna.games<br>絆を集めろ — Deviens le plus grand otaku."
   },
   "fonts": {
-    "import_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Shippori+Mincho+B1:wght@700;800&display=swap",
+    "import_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap",
     "display": {
       "family": "Unbounded",
       "fallback": "system-ui, sans-serif",
@@ -40,33 +40,25 @@
         500,
         700
       ]
-    },
-    "kanji": {
-      "family": "Shippori Mincho B1",
-      "fallback": "'Hiragino Mincho ProN', 'Yu Mincho', serif",
-      "weights": [
-        700,
-        800
-      ]
     }
   },
   "colors": [
     {
       "token": "seal",
       "hex": "#e8203f",
-      "name": "Rouge sceau",
-      "usage": "Logo, sceau 絆, CTA, filet des titres de section, <em>accent</em> d'un mot dans un titre. Une seule zone rouge forte par visuel. En texte : ≥ 18,66px gras ou ≥ 24px (4,43:1 sur sumi)."
+      "name": "Sceau · rouge",
+      "usage": "Le <b>seul accent</b> de Kizuna : sceau du logo, CTA, filet des titres, un mot accentué dans un titre. Les autres couleurs viennent du sujet. En texte : ≥ 18,66px gras ou ≥ 24px (4,43:1 sur encre)."
     },
     {
       "token": "sumi",
       "hex": "#0b0a0d",
-      "name": "Sumi · fond",
-      "usage": "Fond par défaut de tout Kizuna : site, visuels, boosters. Jamais de noir pur #000000."
+      "name": "Encre · fond",
+      "usage": "Fond par défaut : site, affiches, fonds réseaux. Jamais de noir pur #000000."
     },
     {
       "token": "paper",
       "hex": "#f4efe9",
-      "name": "Papier",
+      "name": "Papier · texte",
       "usage": "Titres et texte fort sur sumi, kanji des hankos, soleils. Remplace le blanc pur, sauf texte des CTA et kanji du sceau carré (#FFFFFF)."
     },
     {
@@ -105,7 +97,7 @@
     "surface-2": "#1B191F",
     "line": "#2C2A30",
     "rule": "rgba(244, 239, 233, 0.16)",
-    "font-kanji": "'Shippori Mincho B1', 'Hiragino Mincho ProN', 'Yu Mincho', serif",
+    "font-kanji": "'Zen Kaku Gothic New', system-ui, sans-serif",
     "rarity-c": "#8B9099",
     "rarity-u": "#3FBF7F",
     "rarity-r": "#3F8CFF",
@@ -135,12 +127,12 @@
       "short": "Identité",
       "eyebrow": "Identité &amp; ton",
       "heading": "Collectionner<br>les <em>liens</em>",
-      "lead": "Kizuna (絆) veut dire « lien » en japonais. Tout l’univers visuel vient de l’encre : fond sumi, papier, sceau rouge.",
+      "lead": "Kizuna (絆) veut dire « lien » en japonais. Tout l'univers vient de l'encre : fond encre, texte papier, un sceau rouge.",
       "cards": [
         {
           "label": "Nom",
           "title": "Kizuna · 絆 · キズナ",
-          "text": "Trois écritures : latin (KIZUNA), katakana (キズナ), kanji (絆)."
+          "text": "Le nom s'écrit KIZUNA en latin et 絆 en kanji, réunis dans le logo."
         },
         {
           "label": "Ce qu'on fait",
@@ -170,21 +162,21 @@
       "type": "logo",
       "title": "Logo",
       "concept": {
-        "eyebrow": "Logo — bannière &amp; wordmark",
-        "heading": "Un nom, <em>trois</em> écritures",
-        "lead": "Katakana キズナ empilés dans une bande rouge (bannière nobori), wordmark KIZUNA et signature TRADING CARD GAME. Seul le texte latin change de couleur selon le fond."
+        "eyebrow": "Logo — sceau &amp; wordmark",
+        "heading": "Un sceau, <em>un</em> nom",
+        "lead": "Le sceau 絆 penché, puis KIZUNA : c'est le logo du header du site et des affiches. Le sceau garde toujours son rouge ; seul KIZUNA change de couleur selon le fond."
       },
       "construction": [
-        "Logo de <b>104</b> de haut · bande <b>38 × 104</b> #E8203F.",
-        "Katakana : <b>Zen Kaku Gothic New 900</b>, papier, centrés.",
-        "KIZUNA : <b>Unbounded 900</b>, capitales <b>36</b> · bande → texte <b>15</b>.",
-        "Signature : <b>Unbounded 500</b>, capitales <b>8,5</b>, interlettrage <b>0,22em</b>.",
-        "Mini <b>24px</b> de haut ; en dessous, wordmark seul ou sceau 絆."
+        "Sceau : carré rouge #E8203F, coins <b>16 / 21 / 14 / 23 %</b>, incliné de <b>-7°</b>.",
+        "Filet intérieur à <b>7 %</b> du bord, 1px papier à 55 %. Kanji 絆 papier, ~64 % du sceau.",
+        "KIZUNA : <b>Unbounded 700</b>, interlettrage <b>0,04em</b>, capitales à 31 % du sceau.",
+        "Espace sceau → KIZUNA : <b>32 %</b> du côté du sceau (12px pour un sceau de 38px).",
+        "Mini : sceau de <b>24px</b> ; en dessous, icône seule."
       ],
       "variants": [
         {
           "bg": "sumi",
-          "label": "Principal · sumi #0B0A0D"
+          "label": "Sur fond sombre · encre"
         },
         {
           "bg": "sumi-2",
@@ -192,12 +184,12 @@
         },
         {
           "bg": "paper",
-          "label": "Sur papier #F4EFE9"
+          "label": "Sur fond clair · papier"
         }
       ],
-      "mark_note": "Sceau 絆 seul (fond rouge, kanji blanc, coins arrondis 72/512, comme le favicon du site) : favicon, avatar de profil, icône d’app. Partout ailleurs, si le logo complet tient à 24px de haut, il passe avant le sceau.",
-      "clearspace": "Zone de protection : la largeur de la bande rouge (38 unités) sur les 4 côtés. Aucun texte, aucun bord de visuel dans cette zone.",
-      "clearspace_px": 9,
+      "mark_note": "Icône (avatar) : le sceau penché seul, pour les photos de profil et l'icône d'app. Le favicon du site en est la version droite, coins 72/512.",
+      "clearspace": "Zone de protection : la moitié du côté du sceau sur les 4 côtés.",
+      "clearspace_px": 11,
       "misuse": [
         {
           "bg": "seal"
@@ -213,33 +205,33 @@
         }
       ],
       "rules_dont": [
-        "Jamais sur fond rouge (la bande disparaît) ni sur une couleur de rareté.",
-        "Jamais étiré, pivoté ou recomposé. Seul le hanko s’incline (-7°), jamais le logo ni le sceau carré.",
-        "Jamais la bande sans les katakana, ni les katakana hors de la bande."
+        "Jamais sur fond rouge (le sceau disparaît) ni sur une couleur de rareté.",
+        "Jamais le logo entier pivoté ou étiré. Le sceau est déjà penché de -7° : ne pas le redresser.",
+        "Jamais KIZUNA dans une autre police, ni le sceau recoloré."
       ]
     },
     {
       "type": "generic",
-      "title": "Sceau & kanji",
+      "title": "Sceau",
       "pages": [
         {
-          "eyebrow": "Sceau, tampon &amp; texte vertical",
+          "eyebrow": "Sceau &amp; texte vertical",
           "heading": "Le sceau <em>signe</em>, il ne décore pas",
-          "lead": "Le hanko est la signature de Kizuna dans l’interface : un carré rouge aux coins irréguliers, incliné de -7°, qui porte un seul kanji. Le sceau carré du favicon, lui, a des coins réguliers et reste droit.",
+          "lead": "Le sceau 絆 du logo sert aussi seul dans l'interface et les affiches : carré rouge aux coins irréguliers, penché de -7°, filet intérieur papier. Il porte un seul kanji, en Zen Kaku Gothic New.",
           "blocks": [
             {
               "type": "cells",
               "columns": 3,
               "items": [
                 {
-                  "label": "Hanko plein",
+                  "label": "Sceau plein",
                   "center": true,
                   "min_height": 150,
                   "demo": "<span class=\"kz-hanko lg\">絆</span>",
-                  "spec": "<b>bg</b> #E8203F · <b>kanji</b> papier, Mincho 800<br><b>radius</b> 16% 21% 14% 23% · <b>rotate</b> -7°<br><b>taille</b> 38px (UI) · 32px (mobile)"
+                  "spec": "<b>bg</b> #E8203F · <b>kanji</b> papier, Zen Kaku 900<br><b>radius</b> 16% 21% 14% 23% · <b>rotate</b> -7°<br><b>filet</b> inset 7 %, 1px papier 55 %"
                 },
                 {
-                  "label": "Hanko contour",
+                  "label": "Sceau contour",
                   "center": true,
                   "min_height": 150,
                   "demo": "<span class=\"kz-hanko lg outline\">競</span>",
@@ -257,8 +249,8 @@
             {
               "type": "rules",
               "items": [
-                "Un sceau par zone de lecture. Deux hankos côte à côte s'annulent.",
-                "Le kanji du hanko est en Mincho (empattements), celui des icônes en Zen Kaku Gothic New 900. Choix des kanji d’icône : à valider.",
+                "Un sceau par zone de lecture. Deux sceaux côte à côte s'annulent.",
+                "Au survol (site), le sceau pivote jusqu'à -12° avec un petit rebond, puis revient.",
                 "Le texte vertical ne porte qu'une accroche courte (5 signes au plus), jamais une information."
               ]
             }
@@ -271,11 +263,11 @@
       "title": "Couleurs de marque",
       "short": "Couleurs",
       "eyebrow": "Palette de marque",
-      "heading": "Sumi, papier, <em>sceau</em>",
+      "heading": "Encre, papier, <em>sceau</em>",
       "accent_rule": {
         "eyebrow": "Règle du rouge",
-        "heading": "Le rouge est un <em>sceau</em>, pas un fond",
-        "lead": "Le rouge #E8203F marque ce qui engage : le logo, le sceau 絆, l’action principale. Sur un visuel, il n’y a qu’une seule zone rouge forte. Le reste est en sumi et papier, et les couleurs de jeu (raretés, éléments) restent sur leurs objets.",
+        "heading": "Le rouge est le <em>seul</em> accent",
+        "lead": "Le rouge du sceau est le seul accent ; les autres couleurs viennent du sujet (la rareté d'une carte). Sur un visuel, une seule zone rouge forte, le reste en encre et papier.",
         "correct": [
           "<span class=\"kz-cta\">Ouvrir un booster</span>",
           "<p class=\"kz-h\">Les boosters <em>du moment</em></p>",
@@ -293,9 +285,9 @@
       "title": "Couleurs de jeu",
       "pages": [
         {
-          "eyebrow": "Raretés",
+          "eyebrow": "Raretés · couleur du sujet",
           "heading": "Sept raretés, <em>une</em> échelle",
-          "lead": "La rareté se lit à la couleur avant le texte. Couleurs réservées aux cartes et à ce qui en parle : tirages, badges.",
+          "lead": "La rareté se lit à la couleur. Dans les affiches, c'est la <b>couleur du sujet</b> : elle éclaire les lignes de concentration et la lumière derrière la carte. Huit couleurs possibles : le rouge sceau et les sept raretés.",
           "blocks": [
             {
               "type": "cells",
@@ -311,7 +303,7 @@
                   "demo": "<div class=\"kz-rarity\" style=\"--r:#3fbf7f;--g:linear-gradient(90deg,#0a7552,#4ff0b0)\"><i></i><b>U</b></div>",
                   "title": "Peu commune",
                   "title_size": 15,
-                  "spec": "#3FBF7F · cadre #0A7552 → #4FF0B0<br><em>Nom à confirmer</em>"
+                  "spec": "#3FBF7F · cadre #0A7552 → #4FF0B0"
                 },
                 {
                   "demo": "<div class=\"kz-rarity\" style=\"--r:#3f8cff;--g:linear-gradient(90deg,#1f5fe0,#6fb0ff)\"><i></i><b>R</b></div>",
@@ -417,8 +409,8 @@
       "families": [
         {
           "font": "display",
-          "eyebrow": "Display — Unbounded",
-          "heading": "Unbounded <em>pour les titres</em>",
+          "eyebrow": "Titres — Unbounded",
+          "heading": "Unbounded : titres, chiffres, <em>KIZUNA</em>",
           "styles": [
             {
               "name": "Affiche",
@@ -466,7 +458,7 @@
         {
           "font": "text",
           "eyebrow": "Texte — Zen Kaku Gothic New",
-          "heading": "Zen Kaku <em>pour lire</em>",
+          "heading": "Zen Kaku : texte <em>et japonais</em>",
           "styles": [
             {
               "name": "Courant",
@@ -500,7 +492,7 @@
               "color": "#f5b81b"
             },
             {
-              "name": "Kanji d'interface",
+              "name": "Japonais",
               "size": "16px",
               "weight": 900,
               "tracking": "0.3em",
@@ -511,8 +503,8 @@
         },
         {
           "font": "mono",
-          "eyebrow": "Chiffres — JetBrains Mono",
-          "heading": "Mono pour <em>ce qui bouge</em>",
+          "eyebrow": "Interface — JetBrains Mono",
+          "heading": "Mono, <em>seulement</em> dans l'interface",
           "styles": [
             {
               "name": "Compte à rebours",
@@ -531,36 +523,13 @@
               "color": "mist"
             }
           ]
-        },
-        {
-          "font": "kanji",
-          "eyebrow": "Kanji — Mincho",
-          "heading": "Mincho <em>pour les sceaux</em>",
-          "styles": [
-            {
-              "name": "Hanko",
-              "size": "21px",
-              "weight": 800,
-              "leading": 1,
-              "sample": "絆 競",
-              "spec": "Mincho · 21px · 800 (Hiragino Mincho ProN / Yu Mincho, à défaut Shippori Mincho B1)"
-            },
-            {
-              "name": "Icône de rubrique",
-              "size": "17px",
-              "weight": 800,
-              "leading": 1,
-              "sample": "報 蒐 実 務",
-              "spec": "Mincho · 17px · 800 · choix des kanji à valider"
-            }
-          ]
         }
       ],
       "rules": [
-        "Titres d'affiche en MAJUSCULES Unbounded 900, interlettrage -0,01 à -0,02em. Titres de section en casse normale, 800.",
-        "Interlettrage positif seulement sur les CTA (+0,04em) et la signature du logo.",
-        "Jamais de texte courant en Unbounded : trop large au-delà d'une ligne. Le paragraphe passe en Zen Kaku.",
-        "Le site utilise la Mincho du système. Pour les exports (réseaux), Shippori Mincho B1 garantit le même rendu partout. <em>À confirmer.</em>"
+        "Deux polices pour les visuels : <b>Unbounded</b> (titres, chiffres, le nom KIZUNA) et <b>Zen Kaku Gothic New</b> (texte, japonais).",
+        "Titres d'affiche en MAJUSCULES Unbounded 900, -0,01 à -0,02em. Titres de section en casse normale, 800.",
+        "Tout le japonais (kanji du sceau, kana, texte vertical) est en Zen Kaku Gothic New.",
+        "JetBrains Mono reste réservé aux comptes à rebours et prix du site, jamais dans une affiche."
       ]
     },
     {
@@ -570,20 +539,20 @@
       "pages": [
         {
           "eyebrow": "Motifs graphiques",
-          "heading": "Le manga <em>en arrière-plan</em>",
-          "lead": "Deux motifs empruntés au manga donnent l’énergie des visuels : les soleils (lignes de concentration) et la trame. Ils restent derrière le sujet, jamais devant.",
+          "heading": "Les lignes <em>pointent</em> vers le sujet",
+          "lead": "Le motif des affiches : des lignes de manga qui pointent vers le sujet, éclairé de sa couleur. Le centre reste vide : on y pose la carte, le perso ou le texte.",
           "blocks": [
             {
               "type": "cells",
               "columns": 2,
               "items": [
                 {
-                  "label": "Soleil",
+                  "label": "Lignes de concentration",
                   "bg": "sumi",
                   "min_height": 0,
-                  "demo": "<div class=\"kz-sun-demo\"><span class=\"kz-hanko lg\">絆</span></div>",
-                  "caption": "Rayons fins et irréguliers, centre dégagé, centré sur le sujet (carte, sceau, personnage).",
-                  "spec": "papier #F4EFE9 à 12–30 % · ou couleur de conduite du visuel"
+                  "demo": "<div class=\"kz-sun-demo\"></div>",
+                  "caption": "Rayons fins de la couleur du sujet, quelques rayons papier, lumière douce au centre.",
+                  "spec": "2 versions : sur l'encre du site · transparente (sur n'importe quelle image)"
                 },
                 {
                   "label": "Trame",
@@ -597,8 +566,8 @@
             {
               "type": "rules",
               "items": [
-                "Un soleil par visuel, jamais en plein contraste derrière un texte : 30 % au plus sous un titre.",
-                "Les fichiers sources sont dans <b>logos/</b> : kizuna-soleil-papier.svg et kizuna-soleil-rouge.svg."
+                "Une seule série de lignes par visuel, centrée sur le sujet.",
+                "Fichiers : <b>logos/</b> kizuna-lignes-encre.svg et kizuna-lignes-transparent.svg (sujet rouge). Les autres couleurs de sujet sont dans le kit Visuels du site."
               ]
             }
           ]
@@ -657,39 +626,20 @@
       "short": "Réseaux",
       "pages": [
         {
-          "eyebrow": "Formats &amp; zones de sécurité",
-          "heading": "Le sujet <em>au centre</em>, l'interface autour",
-          "lead": "Trois formats suffisent. Les zones hachurées sont recouvertes par l'interface des applis : on n'y met ni texte ni logo. <em>Valeurs standard des plateformes, à recaler sur le kit Visuels.</em>",
+          "eyebrow": "Fonds aux tailles des réseaux",
+          "heading": "Un fond, <em>sept</em> formats",
+          "lead": "Chaque fond reprend le logo, les lignes, la lumière du sujet et un grand 絆 en filigrane. Le bas fond vers l'encre pour accueillir le titre. Les fonds sont prêts à télécharger dans le kit Visuels du site.",
           "blocks": [
             {
-              "type": "cells",
-              "columns": 3,
-              "items": [
-                {
-                  "label": "Carré · 1080 × 1080",
-                  "center": true,
-                  "demo": "<div class=\"kz-fmt\" style=\"width:150px;height:150px\"><i class=\"m\" style=\"inset:9px\"></i></div>",
-                  "spec": "Feed X, Bluesky<br><b>marge</b> 64px sur les 4 côtés"
-                },
-                {
-                  "label": "Portrait · 1080 × 1350",
-                  "center": true,
-                  "demo": "<div class=\"kz-fmt\" style=\"width:120px;height:150px\"><i class=\"m\" style=\"inset:7px\"></i></div>",
-                  "spec": "Feed Instagram (format par défaut)<br><b>marge</b> 64px · grille d'aperçu 3:4 au centre"
-                },
-                {
-                  "label": "Vertical · 1080 × 1920",
-                  "center": true,
-                  "demo": "<div class=\"kz-fmt\" style=\"width:84px;height:150px\"><i class=\"z\" style=\"top:0;height:20px\"></i><i class=\"z\" style=\"bottom:0;height:27px\"></i><i class=\"z\" style=\"right:0;top:20px;bottom:27px;width:11px\"></i></div>",
-                  "spec": "Story, Reel, TikTok, Shorts<br><b>haut</b> 250px · <b>bas</b> 340px · <b>droite</b> 120px (TikTok)"
-                }
-              ]
+              "type": "html",
+              "html": "<div class=\"kz-fmts\"><figure><div class=\"kz-bg\" style=\"width:87px;height:87px\"></div><figcaption><b>Instagram post</b>1080 × 1080</figcaption></figure><figure><div class=\"kz-bg\" style=\"width:70px;height:87px\"></div><figcaption><b>Instagram portrait</b>1080 × 1350</figcaption></figure><figure><div class=\"kz-bg\" style=\"width:49px;height:87px\"></div><figcaption><b>Story Instagram / TikTok</b>1080 × 1920</figcaption></figure><figure><div class=\"kz-bg\" style=\"width:133px;height:70px\"></div><figcaption><b>Lien Discord, X</b>1200 × 630</figcaption></figure><figure><div class=\"kz-bg\" style=\"width:124px;height:70px\"></div><figcaption><b>Bannière Discord</b>960 × 540</figcaption></figure><figure><div class=\"kz-bg\" style=\"width:124px;height:70px\"></div><figcaption><b>Miniature YouTube</b>1280 × 720</figcaption></figure><figure><div class=\"kz-bg\" style=\"width:178px;height:59px\"></div><figcaption><b>Bannière X</b>1500 × 500</figcaption></figure></div>"
             },
             {
               "type": "rules",
               "items": [
-                "Le sceau 絆 ou le logo se place en haut à gauche, dans la marge. Une seule signature par visuel.",
-                "Un titre en Unbounded 900 MAJ, 2 lignes au plus. Le détail va dans la légende du post, pas dans l'image."
+                "Logo (sceau + KIZUNA) en haut à gauche, dans la zone de sécurité.",
+                "<b>Zone de sécurité</b> (pointillés cyan dans le kit) : aucun texte au-delà. <b>Cadre gris</b> : là où poser le sujet. Ni l'un ni l'autre n'apparaît dans le PNG.",
+                "Titre en Unbounded 900 MAJ dans le bas, sur l'encre. Le détail va dans la légende du post."
               ]
             }
           ]

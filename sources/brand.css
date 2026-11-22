@@ -13,7 +13,7 @@
 .page.dark .contact-row{border-bottom-color:var(--line);}
 .page.dark .contact-row .k,.page.dark .contact-row .note{color:var(--mist);}
 .page.dark .contact-row .v{color:var(--paper);}
-.page.dark::before{content:"";position:absolute;inset:0;background:url("%%SUN_PAPER%%") 78% 50%/1900px no-repeat;opacity:.13;pointer-events:none;}
+.page.dark::before{content:"";position:absolute;inset:0;background:url("%%LINES%%") 88% 50%/1300px no-repeat;opacity:.6;pointer-events:none;}
 .page.dark>*{position:relative;}
 /* Logo : le wordmark suit le fond (papier sur sombre, sumi sur papier) */
 [style*="background:#0b0a0d"] .logo,[style*="background:#131116"] .logo{color:#f4efe9!important;}
@@ -23,7 +23,10 @@
 .dd-flag.do{background:rgba(63,191,127,.18);} .dd-flag.dont{background:rgba(232,32,63,.2);color:#ff6b7f;}
 
 /* --- Sceau (hanko) --- */
-.kz-hanko{display:inline-grid;place-items:center;width:38px;height:38px;background:var(--seal);color:var(--paper);border-radius:16% 21% 14% 23%;font:800 21px/1 var(--font-kanji);rotate:-7deg;flex:none;}
+.kz-hanko{position:relative;display:inline-grid;place-items:center;width:38px;height:38px;background:var(--seal);color:var(--paper);border-radius:16% 21% 14% 23%;font:900 21px/1 var(--font-kanji);rotate:-7deg;flex:none;}
+.kz-hanko::after{content:"";position:absolute;inset:7%;border:1px solid rgba(244,239,233,.55);border-radius:inherit;}
+.kz-hanko.lg::after{border-width:2px;}
+.kz-hanko.outline::after{display:none;}
 .kz-hanko.lg{width:84px;height:84px;font-size:46px;}
 .kz-hanko.outline{background:transparent;border:1.33px solid var(--seal);color:var(--seal);}
 .kz-hanko.lg.outline{border-width:2.5px;}
@@ -57,8 +60,7 @@
 .kz-el{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:4px;background:rgba(0,0,0,.55);border:1px solid var(--line);font:900 22px/1 var(--font-text);color:var(--el);}
 
 /* --- Motifs --- */
-.kz-sun-demo{height:120px;display:grid;place-items:center;background:url("%%SUN_PAPER%%") center/240px no-repeat;opacity:1;position:relative;}
-.kz-sun-demo::before{content:"";position:absolute;inset:0;background:var(--sumi);opacity:.55;}
+.kz-sun-demo{height:150px;display:grid;place-items:center;background:url("%%LINES%%") center/300px no-repeat;position:relative;}
 .kz-sun-demo .kz-hanko{position:relative;}
 .kz-tone-demo{height:120px;background:radial-gradient(circle,#f5b047 .7px,transparent .8px) 0 0/4px 4px;-webkit-mask:linear-gradient(transparent,#000);mask:linear-gradient(transparent,#000);}
 .kz-crimp-demo{height:120px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(#0b0a0d,#3a2a16);}
@@ -97,7 +99,7 @@
 .kz-fmt .z[style*="width"]{left:auto;}
 .kz-social{display:flex;gap:36px;align-items:flex-start;}
 .kz-post{position:relative;flex:none;width:216px;height:270px;background:var(--sumi);border:1px solid var(--line);overflow:hidden;}
-.kz-post .sun{position:absolute;inset:0;background:url("%%SUN_PAPER%%") 50% 42%/420px no-repeat;opacity:.3;}
+.kz-post .sun{position:absolute;inset:0;background:url("%%LINES%%") 50% 42%/420px no-repeat;opacity:.3;}
 .kz-post .kz-hanko{position:absolute;top:14px;left:14px;width:28px;height:28px;font-size:15px;}
 .kz-post .card{position:absolute;left:68px;top:52px;width:80px;height:112px;border-radius:5px;background:var(--g);display:flex;align-items:flex-start;justify-content:flex-end;padding:6px;rotate:4deg;box-shadow:0 8px 24px rgba(0,0,0,.6);}
 .kz-post .card b{display:grid;place-items:center;width:18px;height:18px;background:#f5b81b;color:var(--sumi);font:900 10px var(--font-display);border-radius:3px;}
@@ -113,7 +115,7 @@
 .kz-round svg{width:100%;height:100%;display:block;}
 .kz-banner{position:relative;width:200px;height:112px;background:var(--sumi);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;}
 .kz-banner.wide{width:180px;height:101px;}
-.kz-banner .sun{position:absolute;inset:0;background:url("%%SUN_PAPER%%") center/320px no-repeat;opacity:.15;}
+.kz-banner .sun{position:absolute;inset:0;background:url("%%LINES%%") center/320px no-repeat;opacity:.15;}
 .kz-banner .lg{position:relative;line-height:0;}
 .kz-banner .lg svg{height:30px;width:auto;}
 .kz-banner .abs{position:absolute;right:8px;top:10px;font-size:8px;}
@@ -135,3 +137,14 @@
 .toc.compact .toc-row{padding:6px 0;} .toc.compact .toc-title{font-size:17px;}
 .cell[style*="min-height:140px"]{min-height:118px!important;}
 .kz-lex .kz-lex-new b{color:var(--mist);font-family:var(--font-display);} .kz-lex .kz-lex-new span{color:var(--mist);}
+
+/* --- Fonds réseaux (kit Visuels) --- */
+.kz-fmts{display:flex;flex-wrap:nowrap;gap:18px 22px;align-items:flex-end;margin-bottom:26px;}
+.kz-fmts figure{display:flex;flex-direction:column;gap:10px;}
+.kz-fmts figcaption{font-size:10.5px;line-height:1.35;color:var(--mist);font-family:var(--font-mono);}
+.kz-fmts figcaption b{display:block;font-family:var(--font-text);font-size:11.5px;color:var(--paper);font-weight:700;}
+.kz-bg{position:relative;overflow:hidden;background:url("%%LINES%%") center/260px no-repeat,var(--sumi);border:1px solid var(--line);}
+.kz-bg::before{content:"絆";position:absolute;left:50%;top:44%;translate:-50% -50%;font:900 60px/1 var(--font-kanji);color:rgba(244,239,233,.06);}
+.kz-bg::after{content:"";position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(transparent,var(--sumi));}
+/* Logo plus large : le lockup sceau + KIZUNA est horizontal */
+.logo-xs svg{height:20px;} .logo-sm svg{height:34px;} .logo-lg svg{height:58px;} .logo-xl svg{height:64px;}
