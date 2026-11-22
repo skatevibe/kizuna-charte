@@ -2,7 +2,7 @@
 :root {
   /* Palette */
   --seal: #E8203F; /* Logo, sceau 絆, CTA, filet des titres de section, accent d'un mot dans un titre. Une seule zone rouge forte par visuel. En texte : ≥ 18,66px gras ou ≥ 24px (4,43:1 sur sumi). */
-  --sumi: #0B0A0D; /* Fond par défaut de tout Kizuna : site, visuels, boosters, overlays. Jamais de noir pur #000000. */
+  --sumi: #0B0A0D; /* Fond par défaut de tout Kizuna : site, visuels, boosters. Jamais de noir pur #000000. */
   --paper: #F4EFE9; /* Titres et texte fort sur sumi, kanji des hankos, soleils. Remplace le blanc pur, sauf texte des CTA et kanji du sceau carré (#FFFFFF). */
   --sumi-2: #131116; /* Panneaux, bandeaux, cartes d'info. Niveau au-dessus : #1B191F (boutons pilule, puces). Filet : #2C2A30, ou papier à 16 %. */
   --ash: #BDB5C2; /* Texte courant (paragraphes, descriptions) sur sumi et sumi 2. Les titres restent en papier. */

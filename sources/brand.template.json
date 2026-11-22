@@ -4,7 +4,7 @@
     "version": "1.0",
     "date": "Novembre 2026",
     "lang": "fr",
-    "usage": "visuels réseaux, Discord &amp; stream",
+    "usage": "visuels réseaux",
     "cover_eyebrow": "Charte graphique · 絆",
     "cover_title": "Charte<br>graphique <em>Kizuna</em>",
     "cover_note": "Kizuna — Trading Card Game · kizuna.games<br>絆を集めろ — Deviens le plus grand otaku."
@@ -61,7 +61,7 @@
       "token": "sumi",
       "hex": "#0b0a0d",
       "name": "Sumi · fond",
-      "usage": "Fond par défaut de tout Kizuna : site, visuels, boosters, overlays. Jamais de noir pur #000000."
+      "usage": "Fond par défaut de tout Kizuna : site, visuels, boosters. Jamais de noir pur #000000."
     },
     {
       "token": "paper",
@@ -195,7 +195,7 @@
           "label": "Sur papier #F4EFE9"
         }
       ],
-      "mark_note": "Sceau 絆 seul (fond rouge, kanji blanc, coins arrondis 72/512, comme le favicon du site) : favicon, avatar Discord, icône d’app. Partout ailleurs, si le logo complet tient à 24px de haut, il passe avant le sceau.",
+      "mark_note": "Sceau 絆 seul (fond rouge, kanji blanc, coins arrondis 72/512, comme le favicon du site) : favicon, avatar de profil, icône d’app. Partout ailleurs, si le logo complet tient à 24px de haut, il passe avant le sceau.",
       "clearspace": "Zone de protection : la largeur de la bande rouge (38 unités) sur les 4 côtés. Aucun texte, aucun bord de visuel dans cette zone.",
       "clearspace_px": 9,
       "misuse": [
@@ -263,21 +263,6 @@
               ]
             }
           ]
-        },
-        {
-          "eyebrow": "Lexique des kanji",
-          "heading": "Un kanji = <em>une</em> rubrique",
-          "lead": "Les kanji remplacent les pictos, un par rubrique. <em>Lexique relevé sur le site, à vérifier et valider</em> : le sens de chaque kanji et son choix pour la rubrique doivent être confirmés avant de le figer.",
-          "blocks": [
-            {
-              "type": "html",
-              "html": "<div class=\"kz-lex\"><div><b>絆</b><span>Kizuna · affiliation · parrain</span></div><div><b>報</b><span>Actualités</span></div><div><b>蒐</b><span>Collection · top collectionneurs</span></div><div><b>競</b><span>Rush · compétition</span></div><div><b>贈</b><span>Cadeau · boosters offerts</span></div><div><b>移</b><span>Import (depuis Kyara)</span></div><div><b>実</b><span>Succès</span></div><div><b>務</b><span>Missions</span></div><div><b>休</b><span>Pause</span></div><div><b>伝説</b><span>Rang « Légende » (prestige 3)</span></div><div><b>達人</b><span>Rang « Maître » (prestige 2)</span></div><div class=\"kz-lex-new\"><b>＋</b><span>Nouvelle rubrique : vérifier le sens du kanji, puis l’ajouter ici.</span></div></div>"
-            },
-            {
-              "type": "spec",
-              "text": "<b>icône de rubrique</b> Mincho 800 · 17px · rouge #E8203F ou papier · placée avant le titre, gap 10px · <b>statut</b> à valider"
-            }
-          ]
         }
       ]
     },
@@ -310,7 +295,7 @@
         {
           "eyebrow": "Raretés",
           "heading": "Sept raretés, <em>une</em> échelle",
-          "lead": "La rareté se lit à la couleur avant le texte. Couleurs réservées aux cartes et à ce qui en parle : tirages, badges, rôles Discord.",
+          "lead": "La rareté se lit à la couleur avant le texte. Couleurs réservées aux cartes et à ce qui en parle : tirages, badges.",
           "blocks": [
             {
               "type": "cells",
@@ -575,7 +560,7 @@
         "Titres d'affiche en MAJUSCULES Unbounded 900, interlettrage -0,01 à -0,02em. Titres de section en casse normale, 800.",
         "Interlettrage positif seulement sur les CTA (+0,04em) et la signature du logo.",
         "Jamais de texte courant en Unbounded : trop large au-delà d'une ligne. Le paragraphe passe en Zen Kaku.",
-        "Le site utilise la Mincho du système. Pour les exports (réseaux, stream), Shippori Mincho B1 garantit le même rendu partout. <em>À confirmer.</em>"
+        "Le site utilise la Mincho du système. Pour les exports (réseaux), Shippori Mincho B1 garantit le même rendu partout. <em>À confirmer.</em>"
       ]
     },
     {
@@ -684,7 +669,7 @@
                   "label": "Carré · 1080 × 1080",
                   "center": true,
                   "demo": "<div class=\"kz-fmt\" style=\"width:150px;height:150px\"><i class=\"m\" style=\"inset:9px\"></i></div>",
-                  "spec": "Feed X, Discord, Bluesky<br><b>marge</b> 64px sur les 4 côtés"
+                  "spec": "Feed X, Bluesky<br><b>marge</b> 64px sur les 4 côtés"
                 },
                 {
                   "label": "Portrait · 1080 × 1350",
@@ -705,105 +690,6 @@
               "items": [
                 "Le sceau 絆 ou le logo se place en haut à gauche, dans la marge. Une seule signature par visuel.",
                 "Un titre en Unbounded 900 MAJ, 2 lignes au plus. Le détail va dans la légende du post, pas dans l'image."
-              ]
-            }
-          ]
-        },
-        {
-          "eyebrow": "Gabarits par type de visuel",
-          "heading": "Six visuels, <em>une</em> grammaire",
-          "lead": "Chaque type de visuel du kit a sa couleur de conduite. Le reste (fond sumi, soleil, logo, titre) ne change pas.",
-          "blocks": [
-            {
-              "type": "html",
-              "html": "<div class=\"kz-social\"><div class=\"kz-post\"><div class=\"sun\"></div><span class=\"kz-hanko\">絆</span><div class=\"card\" style=\"--g:linear-gradient(135deg,#e2a92c,#ffcf5a)\"><b>L</b></div><p class=\"t\">Nouvelle<br>Légendaire</p><span class=\"tag\">kizuna.games</span></div><table class=\"kz-tbl\"><tr><th>Visuel</th><th>Couleur de conduite</th><th>Élément central</th></tr><tr><td>Nouvelles cartes</td><td>Rareté de la carte</td><td>Cartes en éventail sur soleil</td></tr><tr><td>Booster</td><td>Couleur du booster (gabarit en refonte)</td><td>Booster incliné sur soleil</td></tr><tr><td>Carte à la une</td><td>Rareté de la carte</td><td>Une carte, grande, centrée</td></tr><tr><td>Devinette</td><td>Papier + rouge sceau</td><td>Silhouette, « ? » en Unbounded 900</td></tr><tr><td>Duel</td><td>Les raretés des deux cartes</td><td>Deux cartes face à face, « VS »</td></tr><tr><td>Annonce</td><td>Rouge sceau</td><td>Titre + hanko, soleil rouge</td></tr></table></div><p class=\"caption\" style=\"margin-top:14px\"><em>À confirmer :</em> couleurs de conduite déduites des règles du site, à comparer avec les gabarits du kit Visuels.</p>"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "generic",
-      "title": "Discord & stream",
-      "short": "Discord &amp; stream",
-      "pages": [
-        {
-          "eyebrow": "Discord",
-          "heading": "Les rôles <em>suivent</em> les raretés",
-          "blocks": [
-            {
-              "type": "cells",
-              "columns": 3,
-              "items": [
-                {
-                  "label": "Icône du serveur · 512 × 512",
-                  "center": true,
-                  "demo": "<div class=\"kz-round\">%%MARK%%</div>",
-                  "spec": "Sceau carré du favicon. Discord arrondit encore l’affichage : rien d’important dans les coins."
-                },
-                {
-                  "label": "Bannière · 960 × 540",
-                  "center": true,
-                  "demo": "<div class=\"kz-banner\"><div class=\"sun\"></div><span class=\"lg\">%%LOGO_PAPER%%</span></div>",
-                  "spec": "Logo centré sur sumi + soleil papier 15 %"
-                },
-                {
-                  "label": "Rôles de collectionneur",
-                  "demo": "<div class=\"kz-roles\"><span style=\"--r:#f7f2ff\">Divin</span><span style=\"--r:#e8204a\">Mythique</span><span style=\"--r:#f5b81b\">Légendaire</span><span style=\"--r:#a855f7\">Épique</span><span style=\"--r:#3f8cff\">Rare</span></div>",
-                  "spec": "Couleur du rôle = couleur de rareté. Rouge sceau : équipe Kizuna."
-                }
-              ]
-            },
-            {
-              "type": "cells",
-              "columns": 2,
-              "items": [
-                {
-                  "label": "Emojis · 128 × 128",
-                  "demo": "<div style=\"display:flex;gap:14px;align-items:center\"><span class=\"kz-hanko\">絆</span><span class=\"kz-hanko\">競</span><span class=\"kz-el\" style=\"--el:#ffd866\">光</span><span class=\"kz-rarity sm\" style=\"--r:#e8204a;--g:linear-gradient(90deg,#7a0019,#ff2d55)\"><i></i><b>M</b></span></div>",
-                  "spec": "Hankos, pastilles d’élément, lettres de rareté. Marge 8px."
-                },
-                {
-                  "label": "Annonces du bot",
-                  "demo": "<div class=\"kz-embed\"><b>Tirage Mythique</b><br><span>cormorax a tiré Anya Forger · N° 23</span></div>",
-                  "spec": "Barre de l’embed = couleur de rareté du tirage"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "eyebrow": "Stream",
-          "heading": "Un overlay <em>qui s'efface</em> devant le tirage",
-          "lead": "Pour les lives (ouvertures de boosters, Rush), l'habillage reste sur les bords. Le centre appartient à la carte qui sort.",
-          "blocks": [
-            {
-              "type": "cells",
-              "columns": 3,
-              "items": [
-                {
-                  "label": "Alerte de tirage",
-                  "demo": "<div class=\"kz-alert\" style=\"--r:#f5b81b\"><span class=\"kz-hanko\">絆</span><div><b>LÉGENDAIRE</b><br><span>Gai Might · ✦ Parfaite</span></div></div>",
-                  "spec": "Panneau sumi 2 + filet haut de rareté 2px<br>Entrée 250ms, maintien 5s, sortie 200ms"
-                },
-                {
-                  "label": "Bandeau bas",
-                  "demo": "<div class=\"kz-lower\"><span class=\"k\">競</span><b>Rush de novembre</b><span class=\"mono\">J-11</span></div>",
-                  "spec": "Hauteur 64px (1080p) · Unbounded 800 + JetBrains Mono pour le compteur"
-                },
-                {
-                  "label": "Écran d'attente · 1920 × 1080",
-                  "center": true,
-                  "demo": "<div class=\"kz-banner wide\"><div class=\"sun\"></div><span class=\"kz-tate abs\">絆を集めろ</span><span class=\"lg\">%%LOGO_PAPER%%</span></div>",
-                  "spec": "Logo centré, soleil papier qui tourne lentement (60s/tour), texte vertical à droite"
-                }
-              ]
-            },
-            {
-              "type": "rules",
-              "items": [
-                "Les plateformes de stream (Twitch, YouTube) demandent aussi : bannière de profil 1200 × 480, panneaux 320 × 100, image hors ligne 1920 × 1080.",
-                "Animations : courbe cubic-bezier(.3, 1.25, .5, 1) pour les sceaux (petit rebond), 150ms pour les survols. Toujours une version sans mouvement."
               ]
             }
           ]
